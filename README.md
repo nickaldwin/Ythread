@@ -18,7 +18,7 @@ bcrypt, connect-mongo, dotenv, react, express, express-flash, express-session, m
 
 # Install all the dependencies or node packages used for development via Terminal
 
-`npm install` 
+`npm install` or `npm i` 
 
 ---
 
