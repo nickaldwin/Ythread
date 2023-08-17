@@ -22,7 +22,7 @@ bcrypt, connect-mongo, dotenv, react, express, express-flash, express-session, m
 
 ---
 
-# Things to add
+# Things to add on the .env file
 
 - Create a `.env` file and add the following as `key: value` 
   - PORT: 2121 (can be any port example: 3000) 
