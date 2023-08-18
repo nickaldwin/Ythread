@@ -4,6 +4,9 @@ import Header from "./components/Header";
 import Setone from "./components/Setone";
 import Settwo from "./components/Settwo";
 
- {/*
-        i will work on this later 
-*/} 
+const Login = () => (
+<>
+</>
+);
+
+export default Login;
