@@ -7,7 +7,7 @@ const Head = (props) => (
            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
        <link href="/css/output.css" rel="stylesheet"></link>
    
-          <title>Secondhand</title>
+          <title>Ythread</title>
           <link
             rel="icon"
             type="image/png"
