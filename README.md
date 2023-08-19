@@ -1,6 +1,6 @@
 # Introduction
 
- Ythread A Simple social app is built using the MVC Architecture, we have also implemented "authorization" 
+ Ythread a Simple social app is built using the MVC Architecture, we have also implemented "authorization" 
 
 
 # Objectives
