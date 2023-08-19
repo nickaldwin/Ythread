@@ -43,10 +43,36 @@ const Login = () => (
                                             name="email"
                                         />
                                 </div> 
-                                <div className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-ms rounded-lg focus:ring-lime-200 focus:border-lime200 block w-full p-2.5"
-                                >
+                                <div className="mb-3">
+                                    <label
+                                        for="exampleInputPassword1"
+                                        className="block mb-2 text-sm font-medium text-gray-900"
+                                    >
+                                        Password
+                                    </label>
+                                    <input
+                                        type="passeord"
+                                        className="bg-gray-50 border border-gray-300 tex    t-gray-900 sm:text-sm rounded-lg focus:ring-lime-200 focus:border-li    me-200 block w-full p-2.5"
+                                        id="exampleInputPassword1"
+                                        name="password"
+                                    />
                                 </div>
-                            </form>
+                                <button
+                                    type="submit"
+                                    className="w-full text-lime-700 bg-lime-200 hover:    bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-30    0 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+                                >
+                                       Submit 
+                                </button>
+                                <p className="text-sm font-light text-gray-500 pt-3">
+                    Don’t have an account yet?{" "}
+                    <a
+                      href="/signup"
+                      className="font-medium text-green-600 hover:underline"
+                    >
+                    Sign up
+                                    </a>
+                                </p> 
+                           </form>
                         </div>
                     </div>
                 </div>
