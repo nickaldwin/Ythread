@@ -21,13 +21,13 @@
 - morgan
 - nodemon
 - passport   
-- passport-loca 
+- passport-local
 - validator
 
 
 # Install all the dependencies or node packages used for development via Terminal
 
-`npm install` or `npm i <package name>` 
+`npm install` or `npm i <npm package name>` 
 
 ---
 
