@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const passport = require('passport');
 const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
+const methodOverride = require('method-override');
 const flash = require('express-flash');
 const logger = require('morgan');
 const connectDB = require('./config/database');
@@ -19,12 +20,13 @@ require('./config/passport')(passport);
 connectDB();
 
 //using jsx for the ui
-app.set('view engine', 'jsx');
+app.set('view engine', "jsx");
 app.use(express.static('public'));
 app.engine("jsx", require("express-react-views").createEngine());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-app.use(logger('dev'));
+app.use(express.json())
+app.use(logger('dev'))
+app.use(methodOverride("_method"));
 // Sessions
 app.use(
     session({
