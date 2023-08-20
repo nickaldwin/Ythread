@@ -1,16 +1,15 @@
-const express = require('express')
-const router = express.Router()
-const todosController = require('../controllers/todos') 
-const { ensureAuth } = require('../middleware/auth')
+const express = require("express");
+const router = express.Router();
+const upload = require("../middleware/multer");
+const postsController = require("../controllers/posts");
+const { ensureAuth, ensureGuest } = require("../middleware/auth");
 
-router.get('/', ensureAuth, todosController.getTodos)
+router.get("/:id", ensureAuth, postsController.getPost);
 
-router.post('/createTodo', todosController.createTodo)
+router.post("/createPost", upload.single("file"), postsController.createPost);
 
-router.put('/markComplete', todosController.markComplete)
+router.put("/likePost/:id", postsController.likePost);
 
-router.put('/markIncomplete', todosController.markIncomplete)
+router.delete("/deletePost/:id", postsController.deletePost);
 
-router.delete('/deleteTodo', todosController.deleteTodo)
-
-module.exports = router
+module.exports = router;

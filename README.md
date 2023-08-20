@@ -34,5 +34,10 @@
   - DB_STRING: `your database URI` 
  ---
  
+ # command to start the app
+ ----
+ `npm start`
+ ----
+ 
 
 
